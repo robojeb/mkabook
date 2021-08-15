@@ -1,0 +1,3 @@
+tests/**/*.flac
+tests/**/*.m4b
+tests/output/*

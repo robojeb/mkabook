@@ -1,0 +1,8 @@
+version: "3"
+services:
+  mkabook:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    volumes:
+      - ./:/mkabook
