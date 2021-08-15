@@ -12,6 +12,8 @@ import time
 import multiprocessing
 import shutil
 
+VERSION = "v0.2.0"
+
 DEFAULTS = {
     "input_files": None,
     "codec": "libfdk_aac",
@@ -302,7 +304,7 @@ class Updated:
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="A tool for creating MKV based audiobooks")
+        description="A tool for creating MKV based audiobooks: {}".format(VERSION))
 
     parser.add_argument("INPUT_FILE_OR_DIR")
     parser.add_argument(
